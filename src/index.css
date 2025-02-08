@@ -1,13 +1,91 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  /* font fmaily*/
+  --roboto-font:'Roboto',sans-serif;
+  --lilita-font:'Lilita one',cursive;
+  --oswals-font:'Oswald',sam-serif;
+}
+/* colors*/
+
+body,html{
+  font-size: 14px;
+  font-family: var(--oswals-font);
+  font-weight: 300;
+}
+
+@media(max-widht:992px){
+  body,html{
+    font-size: 0.875rem;
+  }
+}
+
+/*headline Tag*/
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--oswals-font);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+p{
+  font-size: 16px;
+}
+/*Anchor tag*/
+a{
+  color: lightslategray;
+  text-decoration: none;
+  -webkit-transform: all 400ms ease-in-out;
+  -moz--transform:all 400ms ease-in-out;
+  -ms-transform: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+
+
+}
+
+/*custom scollbar*/
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: wheat;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(231, 153, 9);
+}
+
+.order_now{
+  color: aqua;
+  background: yellowgreen;
+  border-color: bisque;
+  padding:  15px 38px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-family: var(--oswals-font);
+  vertical-align: middle;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.order_now:hover,
+.order_now:focus{
+  color: aliceblue;
+  background: transparent;
+  background-color: beige;
+}
+.btn_red{
+  color: aliceblue;
+  background: red;
+  border-color: beige;
+}
+.btn_red:hover{
+  color: red;
+  background: transparent;
+  border-color: beige;
 }

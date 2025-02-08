@@ -11,6 +11,7 @@ function Layout({Children}) {
     
     <Header />
     <div>{Children}</div>
+    <Header />
     <Footer />
     </>
    
