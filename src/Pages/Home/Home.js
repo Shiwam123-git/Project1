@@ -5,8 +5,10 @@ import Layout from '../../Component/Layout/Layout'
 function Home() {
   return (
     <div>
-      <h1>Hello</h1>
-      <Layout ></Layout>
+      
+      <Layout >
+        <section1 />
+      </Layout>
     </div>
   )
 }
